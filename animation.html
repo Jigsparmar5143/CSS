@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation </title>
+	<style>
+		.one {
+
+			animation-name: demo2;
+			animation-duration: 20s;
+			animation-iteration-count: 5;
+			height: 50px;
+			width: 50px;
+			border-radius: 100%;
+			/* margin-left: 30%;
+			margin-top: 30%; */
+			
+			border: 2px solid black;
+			top: 50px;
+			left: 50px;
+
+		}
+
+		.second {
+			animation-name: demo1;
+			animation-duration: 20s;
+			animation-iteration-count: 5;
+			height: 150px;
+			width: 150px;
+			border-radius: 100%;
+			position: absulute; 
+			/* margin-left: 15%;
+			margin-top: 15%; */
+
+
+		}
+
+		.maindiv {
+			position: relative;
+			border: 2px solid black;
+		}
+
+		/* @keyframes demo
+		{
+			from{
+				background-color: red;
+			}
+			to
+			{
+				background-color: yellow;
+			}
+		} */
+		@keyframes demo1 {
+			0% {
+				background-color: red;
+
+			}
+
+			50% {
+				background-color: yellow;
+			}
+
+			75% {
+				background-color: green;
+			}
+
+			100% {
+				background-color: aqua;
+			}
+		}
+
+		@keyframes demo2 {
+			0% {
+				background-color: green;
+
+			}
+
+			50% {
+				background-color: red;
+			}
+
+			75% {
+				background-color: bisque;
+			}
+
+			100% {
+				background-color: aqua;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="maindiv">
+		<div class="one"></div>
+		<div class="second"></div>
+	</div>
+</body>
+
+</html>
